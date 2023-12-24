@@ -1,43 +1,66 @@
-[gd_scene load_steps=3 format=3 uid="uid://dixmi46ca7yyx"]
+[gd_scene load_steps=4 format=3 uid="uid://dixmi46ca7yyx"]
 
 [ext_resource type="Texture2D" uid="uid://dnbmy8vir7t2i" path="res://arts/Background/Background.png" id="1_60w0k"]
+[ext_resource type="Script" path="res://levels/bg.gd" id="1_oummg"]
 [ext_resource type="Texture2D" uid="uid://cdcmm88pys1kr" path="res://arts/Background/middle.png" id="2_cd63y"]
 
-[node name="ParallaxBackground" type="ParallaxBackground"]
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_oummg")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(8, -7)
+motion_mirroring = Vector2(2300, 0)
 
 [node name="Background" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(611.5, 322.375)
-scale = Vector2(2.55625, 2.36305)
+position = Vector2(1145, 654.5)
+scale = Vector2(4.79583, 4.75368)
 texture = ExtResource("1_60w0k")
+metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(8, -7)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(2425, 0)
+metadata/_edit_lock_ = true
 
 [node name="Middle" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(85, 460)
+position = Vector2(167, 945)
+scale = Vector2(1.97443, 1.94973)
 texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
 
 [node name="Middle2" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(260, 460)
+position = Vector2(514, 945)
+scale = Vector2(1.97443, 1.94973)
 texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
 
 [node name="Middle3" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(436, 461)
+position = Vector2(860.75, 946.75)
+scale = Vector2(1.97443, 1.94973)
 texture = ExtResource("2_cd63y")
-
-[node name="Middle5" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(787, 461)
-texture = ExtResource("2_cd63y")
-
-[node name="Middle6" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(962, 461)
-texture = ExtResource("2_cd63y")
-
-[node name="Middle7" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(1138, 462)
-texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
 
 [node name="Middle4" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(611, 461)
+position = Vector2(1207.75, 946.75)
+scale = Vector2(1.97443, 1.94973)
 texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
+
+[node name="Middle5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1553.75, 943.75)
+scale = Vector2(1.97443, 1.94973)
+texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
+
+[node name="Middle6" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1900.75, 943.75)
+scale = Vector2(1.97443, 1.94973)
+texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
+
+[node name="Middle7" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(2247, 944)
+scale = Vector2(1.97443, 1.94973)
+texture = ExtResource("2_cd63y")
+metadata/_edit_lock_ = true
